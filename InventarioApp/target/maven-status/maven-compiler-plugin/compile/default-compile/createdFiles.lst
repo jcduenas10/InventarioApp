@@ -1,0 +1,14 @@
+com\uts\taller1\inventarioapp\stats\Estadisticas.class
+com\uts\taller1\inventarioapp\events\ProductoCaro.class
+com\uts\taller1\inventarioapp\facade\ProductoFacade.class
+com\uts\taller1\inventarioapp\model\Producto.class
+com\uts\taller1\inventarioapp\JakartaRestConfiguration.class
+com\uts\taller1\inventarioapp\web\MensajeBean.class
+com\uts\taller1\inventarioapp\controller\ProductoServlet.class
+com\uts\taller1\inventarioapp\persistence\ProductoDAO.class
+com\uts\taller1\inventarioapp\config\LoggerProducer.class
+com\uts\taller1\inventarioapp\domain\ValidadorProducto.class
+com\uts\taller1\inventarioapp\config\DataSourceProducer.class
+com\uts\taller1\inventarioapp\config\LocaleProducer.class
+com\uts\taller1\inventarioapp\resources\JakartaEE10Resource.class
+com\uts\taller1\inventarioapp\web\PreferenciasBean.class

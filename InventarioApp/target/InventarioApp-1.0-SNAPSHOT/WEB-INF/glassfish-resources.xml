@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" 
+    "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+    <!-- Pool de conexiones para MySQL -->
+    <jdbc-connection-pool name="InventarioPool" 
+                         datasource-classname="com.mysql.cj.jdbc.MysqlDataSource"
+                         max-pool-size="50"
+                         steady-pool-size="5"
+                         max-wait-time-in-millis="30000">
+        <property name="url" value="jdbc:mysql://localhost:3306/inventario_db"/>
+        <property name="user" value="inv_user"/>
+        <property name="password" value="inv_pass"/>
+        <property name="useSSL" value="false"/>
+        <property name="allowPublicKeyRetrieval" value="true"/>
+    </jdbc-connection-pool>
+
+    <!-- Recurso JNDI -->
+    <jdbc-resource pool-name="InventarioPool" 
+                   jndi-name="jdbc/inventarioPool"/>
+</resources>
